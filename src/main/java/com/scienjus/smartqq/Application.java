@@ -38,7 +38,7 @@ public class Application {
             System.out.println("starts with #");
             try {
                 CloseableHttpClient httpclient = HttpClients.createDefault();
-                HttpGet httpgets = new HttpGet("http://114.215.82.75/smartqq/testhttp.php?action=qqinfo&message=" + java.net.URLEncoder.encode(message, "UTF8"));
+                HttpGet httpgets = new HttpGet("http://city-interaction.aliapp.com/qq/qqinfo.php?action=qqinfo&message=" + java.net.URLEncoder.encode(message, "UTF8"));
                 HttpResponse response = httpclient.execute(httpgets);
 
                 System.out.println("response = " + response);
